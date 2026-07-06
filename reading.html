@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>N1 Master - 読解</title>
+
+<link rel="stylesheet" href="CSS/style.css">
+<link rel="icon" href="images/icon.png">
+</head>
+
+<body>
+
+<div class="app">
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            📚 N1 Master
+        </div>
+
+        <nav>
+            <a href="index.html">🏠 ホーム</a>
+            <a href="quiz.html?mode=vocabulary">📚 語彙</a>
+            <a href="quiz.html?mode=kanji">🈶 漢字</a>
+            <a href="quiz.html?mode=grammar">📝 文法</a>
+            <a href="reading.html">📖 読解</a>
+            <a href="result.html">📊 成績</a>
+            <a href="settings.html">⚙ 設定</a>
+        </nav>
+
+    </aside>
+
+    <main class="main-content">
+
+        <header class="topbar">
+            <div>
+                <span class="badge">Reading Mode</span>
+                <h1>📖 読解</h1>
+                <p>読解の種類を選んでください</p>
+            </div>
+
+            <div class="user-box">
+                👤 学習中
+            </div>
+        </header>
+
+        <section class="quiz-card">
+
+            <div class="quiz-menu">
+
+    <button onclick="startReading('reading-short')">
+        📄<br>
+        <span>短文読解</span>
+    </button>
+
+    <button onclick="startReading('reading-medium')">
+        📘<br>
+        <span>中文読解</span>
+    </button>
+
+    <button onclick="startReading('reading-long')">
+        📚<br>
+        <span>長文読解</span>
+    </button>
+
+    <button onclick="startReading('reading-compare')">
+        ⚖️<br>
+        <span>比較読解</span>
+    </button>
+
+    <button onclick="startReading('reading-search')">
+        🔍<br>
+        <span>情報検索</span>
+    </button>
+
+    <button onclick="startReading('reading-random')">
+        🎲<br>
+        <span>ランダム読解</span>
+    </button>
+
+</div>
+
+        </section>
+
+    </main>
+
+</div>
+
+<script src="JS/theme.js"></script>
+<script src="JS/reading.js"></script>
+
+</body>
+</html>
